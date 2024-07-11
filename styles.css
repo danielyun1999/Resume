@@ -1,3 +1,4 @@
+/* 기본 스타일 */
 body {
     font-family: Arial, sans-serif;
     background-color: #e0e0e0;
@@ -9,12 +10,12 @@ body {
 .header {
     background-color: #333;
     color: white;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .container {
-    width: 90%; 
-    margin: 15px auto; 
+    width: 90%;
+    margin: 15px auto;
     background-color: #d0d0d0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -22,9 +23,9 @@ body {
 }
 
 .sidebar {
-    width: 25%; 
-    background-color: #b0b0b0; 
-    padding: 15px; 
+    width: 25%;
+    background-color: #b0b0b0;
+    padding: 15px;
     box-sizing: border-box;
     text-align: left;
 }
@@ -37,24 +38,23 @@ body {
     display: block;
     color: #000;
     text-decoration: underline;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 .sidebar a:visited {
     color: purple;
-    text-decoration: underline;
 }
 
 .content {
-    width: 70%; 
-    padding: 15px; 
+    width: 70%;
+    padding: 15px;
     box-sizing: border-box;
     background-color: white;
     text-align: left;
 }
 
 .content h2 {
-    border-bottom: 1px solid #333; 
+    border-bottom: 1px solid #333;
     padding-bottom: 5px;
 }
 
@@ -64,25 +64,11 @@ body {
 }
 
 .content ul li {
-    margin-bottom: 8px; 
-}
-
-.work-experience, 
-.education-experience {
-    display: flex;
-    justify-content: space-between;
-}
-
-.work-item, 
-.education-item {
-    width: 48%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box;
+    margin-bottom: 8px;
 }
 
 .footer {
-    background-color: #555; /* Lighter color */
+    background-color: #555;
     color: white;
     padding: 10px 0;
     position: relative;
@@ -91,7 +77,7 @@ body {
     text-align: center;
 }
 
-/* Media Query 추가 */
+/* 미디어 쿼리 */
 @media only screen and (max-width: 575px) {
     .container {
         flex-direction: column;
@@ -99,9 +85,7 @@ body {
     }
 
     .sidebar, 
-    .content,
-    .work-item, 
-    .education-item {
+    .content {
         width: 90%;
         margin: auto;
         float: none;
